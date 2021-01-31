@@ -1,4 +1,5 @@
-const { spawn, exec } = require('child_process')
+const { exec } = require('child_process')
+const crossSpawn = require('cross-spawn')
 
 // 执行终端命令相关的代码
 const spawnCommand = (...args) => {
@@ -28,6 +29,7 @@ const execCommand = (...args) => {
       })
     })
   }
+
 
 module.exports = {
     spawn: spawnCommand,

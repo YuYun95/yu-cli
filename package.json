@@ -10,6 +10,7 @@
   "devDependencies": {
     "chalk": "^4.1.0",
     "commander": "^7.0.0",
+    "cross-spawn": "^7.0.3",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.3.3",
     "log-symbols": "^4.0.0",
