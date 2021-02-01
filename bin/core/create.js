@@ -5,9 +5,9 @@ const { createProjectAction } = require('./actions')
 const createCommands = () => {
   // 创建项目
   program
-    .command('create <project> [others...]')
+    .command('create <project>')
     .description('create project')
-    .action((project, others) => {
+    .action(project => {
       createProjectAction(project)
     })
 

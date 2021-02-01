@@ -1,5 +1,6 @@
 const fs = require('fs')
 
+// TODO 使用ejs模板语法，把信息写入模板
 // 把命令交互信息写入模板
 const writeInformationToTheTemplate = (answers, file) => {
   return new Promise((resolve, reject) => {
