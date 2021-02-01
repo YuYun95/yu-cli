@@ -131,15 +131,16 @@ const writeInformationToTheTemplate = answers => {
 }
 
 // 安装项目依赖
-const installPackage = (projectName) => {
+const installPackage = projectName => {
   // 进入项目
-  const npmDir = process.cwd() + '/' + projectName
+  // const npmDir = process.cwd() + '/' + projectName
   // 是否存在yarn
-  childProcess.spawn('git', ['init'], { cwd: npmDir })
+  // childProcess.spawn('git', ['init'], { cwd: npmDir })
 
-  const hasYarn = childProcess.execSync('yarnpkg --version').toString()
-  const install = hasYarn ? childProcess.spawn('yarn', ['install'], { cwd: npmDir }) : childProcess.spawn('npm', ['install'], { cwd: npmDir })
-  
+  // const hasYarn = childProcess.execSync('yarnpkg --version').toString()
+  // const install = hasYarn
+  //   ? childProcess.spawn('yarn.cmd', ['install'], { cwd: npmDir })
+  //   : childProcess.spawn('npm.cmd', ['install'], { cwd: npmDir })
 }
 
 // 处理模板

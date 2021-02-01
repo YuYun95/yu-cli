@@ -6,7 +6,6 @@ const createCommands = require('./core/create')
 // 查看版本号
 program.version(require('../package.json').version)
 
-
 // 帮助信息
 helpOptions()
 
