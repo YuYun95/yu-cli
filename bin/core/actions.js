@@ -10,7 +10,7 @@ const projestIsExists = require('./checkProjectExists')
 
 const createProjectAction = async project => {
   // 1. 检查项目是否存在
-  if (projestIsExists(project)) return
+  if (await projestIsExists(project)) return
 
   // 2. 命令行交互
   const answers = await inquirer.prompt(prompt)

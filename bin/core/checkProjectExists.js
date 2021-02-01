@@ -9,6 +9,7 @@ const projestIsExists = async project => {
     error(logMessage)
     return true
   }
+  return false
 }
 
 module.exports = projestIsExists
